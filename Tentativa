@@ -1,0 +1,29 @@
+
+1.2) Calculadora com quatro operações
+
+function calculadora(operacao, v1, v2) {
+    if (operacao === 'soma') {
+        return v1 + v2;
+    } else if (operacao === 'subtracao') {
+        return v1 - v2;
+    } else if (operacao === 'multiplicacao') {
+        return v1 * v2;
+    } else if (operacao === 'divisao') {
+        return v1 / v2;
+    } else {
+        return "Operação inválida!";
+    }
+}
+
+console.log(calculadora('soma', 5, 3));
+
+
+1.3) Conversão de moeda
+
+function converteMoeda(valorReais, cotacao, moedaDestino) {
+    let valorConvertido = valorReais * cotacao;
+    console.log("R$ " + valorReais + " vale " + valorConvertido + " " + moedaDestino);
+}
+
+converteMoeda(100, 0.19, 'dólares'); //
+
